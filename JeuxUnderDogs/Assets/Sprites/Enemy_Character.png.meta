@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ennemy_Character_0
+      name: Enemy_Character_0
       rect:
         serializedVersion: 2
         x: 45
@@ -113,7 +113,7 @@ TextureImporter:
         width: 37
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,7 +126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_1
+      name: Enemy_Character_1
       rect:
         serializedVersion: 2
         x: 173
@@ -134,7 +134,7 @@ TextureImporter:
         width: 37
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_2
+      name: Enemy_Character_2
       rect:
         serializedVersion: 2
         x: 301
@@ -155,7 +155,7 @@ TextureImporter:
         width: 37
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_3
+      name: Enemy_Character_3
       rect:
         serializedVersion: 2
         x: 429
@@ -176,7 +176,7 @@ TextureImporter:
         width: 37
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_4
+      name: Enemy_Character_4
       rect:
         serializedVersion: 2
         x: 557
@@ -197,7 +197,7 @@ TextureImporter:
         width: 37
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_5
+      name: Enemy_Character_5
       rect:
         serializedVersion: 2
         x: 45
@@ -218,7 +218,7 @@ TextureImporter:
         width: 37
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_6
+      name: Enemy_Character_6
       rect:
         serializedVersion: 2
         x: 173
@@ -239,7 +239,7 @@ TextureImporter:
         width: 37
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_7
+      name: Enemy_Character_7
       rect:
         serializedVersion: 2
         x: 301
@@ -260,7 +260,7 @@ TextureImporter:
         width: 37
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,7 +273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_8
+      name: Enemy_Character_8
       rect:
         serializedVersion: 2
         x: 429
@@ -281,7 +281,7 @@ TextureImporter:
         width: 37
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_9
+      name: Enemy_Character_9
       rect:
         serializedVersion: 2
         x: 557
@@ -302,7 +302,7 @@ TextureImporter:
         width: 37
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ennemy_Character_10
+      name: Enemy_Character_10
       rect:
         serializedVersion: 2
         x: 45
@@ -323,7 +323,7 @@ TextureImporter:
         width: 37
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,17 +346,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ennemy_Character_4: -2120235246
-      Ennemy_Character_10: -467151555
-      Ennemy_Character_3: 1250437433
-      Ennemy_Character_6: -1881922932
-      Ennemy_Character_9: -1504521640
-      Ennemy_Character_0: -1859297614
-      Ennemy_Character_7: -424035532
-      Ennemy_Character_2: 544517763
-      Ennemy_Character_8: 1183131913
-      Ennemy_Character_5: 1467578150
-      Ennemy_Character_1: 567386416
+      Enemy_Character_3: 1250437433
+      Enemy_Character_2: 544517763
+      Enemy_Character_1: 567386416
+      Enemy_Character_9: -1504521640
+      Enemy_Character_10: -467151555
+      Enemy_Character_0: -1859297614
+      Enemy_Character_8: 1183131913
+      Enemy_Character_6: -1881922932
+      Enemy_Character_7: -424035532
+      Enemy_Character_5: 1467578150
+      Enemy_Character_4: -2120235246
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
