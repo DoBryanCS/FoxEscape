@@ -14,7 +14,7 @@ public class TileMapVisualizer : MonoBehaviour
     [SerializeField]
     private Tilemap Wallmap;
     [SerializeField]
-    private TileBase wallTile;
+    private TileBase[] wallTile;
 
     public void paintBuildingCase(IEnumerable<Vector2Int> buildingPositions)
     {
@@ -23,7 +23,7 @@ public class TileMapVisualizer : MonoBehaviour
 
     internal void PaintSingleWall(Vector2Int position)
     {
-        PaintSingleTile(Wallmap, wallTile, position);
+        PaintSingleTile(Wallmap, wallTile[Random.Range(0,wallTile.Length)], position);
     }
 
     private void paintTiles(IEnumerable<Vector2Int> buildingPositions, Tilemap buildingTileMap, TileBase[] buildingTile)
