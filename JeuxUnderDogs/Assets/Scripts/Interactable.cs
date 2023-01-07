@@ -10,12 +10,20 @@ public class Interactable : MonoBehaviour
 
     public GameObject player; // The player game object
 
+    public GameObject mesh; // The meshtextField;
+
     private void Update()
     {
         // Check if the player is close enough to the object and if they are pressing the interaction key
-        if (isInteractable && Vector3.Distance(transform.position, player.transform.position) <= interactionRange && Input.GetKeyDown(interactionKey))
+        if (isInteractable && Vector3.Distance(transform.position, player.transform.position) <= interactionRange)
         {
-            Interact();
+            Debug.Log("In range");
+            mesh.SetActive(true);
+            if(Input.GetKeyDown(interactionKey)) {
+                Interact();
+            }
+        } else {
+            mesh.SetActive(false);
         }
     }
 
