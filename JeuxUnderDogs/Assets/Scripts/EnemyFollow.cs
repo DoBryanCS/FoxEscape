@@ -7,6 +7,7 @@ public class EnemyFollow : MonoBehaviour
     public Transform player;
     public float movementSpeed = 5f;
     public float maxDistance = 5f;
+    public Animator anim;
 
     private Rigidbody2D rb;
     private Vector2 movement;
@@ -38,7 +39,11 @@ public class EnemyFollow : MonoBehaviour
             // Movement de l'ennemi 
             if (Vector3.Distance(player.position, transform.position) > 5)
             {
+                anim.SetBool("isWalking", false);
                 moveCharacter(movement);
+            } else
+            {
+                anim.SetBool("isWalking", true);
             }
 
         } else
