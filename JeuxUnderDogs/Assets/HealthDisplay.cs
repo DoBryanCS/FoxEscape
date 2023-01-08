@@ -11,21 +11,15 @@ public class HealthDisplay : MonoBehaviour
     public Image[] hearts;
 
     //Linking PlayerHealth script
-    public PlayerHealth playerHealth; 
-    
+    public Player player; 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         //Make health and maxHealth same as in PlayerHealth script
-        health = playerHealth.health;
-        maxHealth = playerHealth.maxHealth;
+        health = player.health;
+        maxHealth = player.maxHealth;
 
         for (int i = 0; i < hearts.Length; i++)
         {
