@@ -46,6 +46,12 @@ public class Boss : MonoBehaviour
                 AK();
         }
 
+        if(currentHealth <= 0)
+        {
+            int x = 1;
+        }
+            
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
