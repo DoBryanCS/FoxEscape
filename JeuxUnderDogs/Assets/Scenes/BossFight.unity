@@ -1395,7 +1395,7 @@ MonoBehaviour:
   bullet: {fileID: 6815600066425863008, guid: 0cffa081d807e4f7d934921fcde4344d, type: 3}
   bulletTransform: {fileID: 1187859198}
   canFire: 1
-  timeBetweenFiring: 0.3
+  timeBetweenFiring: 0.5
 --- !u!1 &1031678650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,7 +1745,7 @@ MonoBehaviour:
   akSprite: {fileID: 21300000, guid: c9ef79ba59db38f40bd698e29162563d, type: 3}
   shotgunSprite: {fileID: 21300000, guid: 5ac1eb62bf733ea449deab4f5291fe32, type: 3}
   spriteRenderer: {fileID: 531596578}
-  maxHealth: 100
+  maxHealth: 500
   currentHealth: 0
   healthBar: {fileID: 754268968}
   bulletPreFab: {fileID: 1185661638846708143, guid: b49ac60d1e3ac4c62a0d3ec923a88779, type: 3}

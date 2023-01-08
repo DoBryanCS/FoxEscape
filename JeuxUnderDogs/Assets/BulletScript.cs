@@ -29,4 +29,12 @@ public class BulletScript : MonoBehaviour
         float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rot);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "bullets_boss")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

@@ -9,6 +9,8 @@ TagManager:
   - bullets
   - borders
   - Boss
+  - Undefined
+  - bullets_boss
   layers:
   - Default
   - TransparentFX

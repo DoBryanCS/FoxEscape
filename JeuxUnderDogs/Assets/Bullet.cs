@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag=="Player" || collision.gameObject.tag=="borders" || collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag=="Player" || collision.gameObject.tag=="borders" || collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "bullets")
         {
             Destroy(gameObject);
         }
