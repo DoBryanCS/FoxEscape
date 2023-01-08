@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class followCamera : MonoBehaviour
 {
-    [SerializeField] player player;
+    [SerializeField] PlayerController player;
 
     // Update is called once per frame
     void Update()

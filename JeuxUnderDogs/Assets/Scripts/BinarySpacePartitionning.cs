@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BinarySpacePartitionning : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class BinarySpacePartitionning : MonoBehaviour
     private GameObject[] roofPrefabs;
     [SerializeField]
     private GameObject door;
+    [SerializeField]
+    private GameObject Box_Key;
     
 
     public void Awake()
@@ -39,15 +42,22 @@ public class BinarySpacePartitionning : MonoBehaviour
     private void CreatesBuildings()
     {
         var BuildingsList = ProceduralGeneration.BinarySpacePartitioning(new BoundsInt((Vector3Int)startPosition, new Vector3Int(cityWidth, cityHeight, 0)), minBuildingWidth, minBuildingHeight);
+        int buildingWithKey = Random.Range(0,BuildingsList.Count);
+        int compteur = 0;
         HashSet<Vector2Int> BuildingCase = new HashSet<Vector2Int>();
         Generate_Object.createsObject(tileMapVisualizer);
         foreach (var building in BuildingsList)
         {
+            if (compteur == buildingWithKey)
+            {
+                Instantiate(Box_Key,building.center,Quaternion.identity);
+            }
             BuildingCase = CreateSimpleBuilding(building);
             tileMapVisualizer.paintBuildingCase(BuildingCase);
             WallGenerator.CreateWalls(BuildingCase, tileMapVisualizer,door);
             PlaceObjects.place(building,BuildingCase,possiblesObjects,Grid);
             RoofGenerator.CreateRoofs(building,roofPrefabs,spacing);
+            compteur++;
         }
     }
 

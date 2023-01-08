@@ -7,6 +7,10 @@ TagManager:
   - walls
   - bullets
   - player
+  - ammoBox
+  - specialBox
+  - exitPoint
+  - arrow
   layers:
   - Default
   - TransparentFX

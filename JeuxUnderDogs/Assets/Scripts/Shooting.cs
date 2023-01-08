@@ -6,15 +6,20 @@ public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    private int numberOfAmmo = 100;
 
     public float bulletForce;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (numberOfAmmo > 0)
         {
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+                numberOfAmmo--;
+            }
         }
     }
 
@@ -24,5 +29,13 @@ public class Shooting : MonoBehaviour
         bullet.transform.localScale = new Vector3(2, 2, 0);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ammoBox"))
+        {
+            numberOfAmmo += 30;
+            Destroy(collision.gameObject);
+        }
     }
 }
