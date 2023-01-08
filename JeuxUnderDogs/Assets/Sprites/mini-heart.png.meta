@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b02caffb7355339428f6d9545b2f9e2a
+guid: c81b2b811e3517a4ba871b4539ccd488
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tracers_0
+      name: mini-heart_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 11
-        width: 28
-        height: 41
+        x: 4
+        y: 5
+        width: 8
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9cf368d9803fd848a86d134b843d587
-      internalID: -79961474
+      spriteID: 07343c473c03736448344170c1895b34
+      internalID: -433663957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tracers_1
+      name: mini-heart_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 15
-        width: 23
-        height: 35
+        x: 20
+        y: 5
+        width: 8
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f132a5322f32310428bac4cdffb21646
-      internalID: -1060728612
+      spriteID: d50f09170a48eff418c3b114466a498b
+      internalID: 1463340688
       vertices: []
       indices: 
       edges: []
@@ -157,8 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tracers_1: -1060728612
-      Tracers_0: -79961474
+      mini-heart_1: 1463340688
+      mini-heart_0: -433663957
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
