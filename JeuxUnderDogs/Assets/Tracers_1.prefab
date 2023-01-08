@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 554050939448625515}
   - component: {fileID: -968401808715544508}
   - component: {fileID: -7187428905317029263}
-  m_Layer: 0
+  - component: {fileID: -1591655764316029034}
+  - component: {fileID: 4578803423348674036}
+  m_Layer: 7
   m_Name: Tracers_1
-  m_TagString: Untagged
+  m_TagString: bullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df96a61293f13443fae3a12e7cae6957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerBullet: {fileID: 0}
+  BossBullet: {fileID: 0}
 --- !u!61 &-7187428905317029263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,3 +150,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &-1591655764316029034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185661638846708143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfffabd7582234402a998a8b514ef033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 0}
+  damage: 1
+--- !u!114 &4578803423348674036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185661638846708143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6f9f1a12bad4a93974ec0ac3de4b4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object1: {fileID: 6815600066425863008, guid: 0cffa081d807e4f7d934921fcde4344d, type: 3}
+  object2: {fileID: 1185661638846708143}

@@ -36,7 +36,6 @@ public class Boss : MonoBehaviour
         System.Random r = new System.Random();
         int rInt = r.Next(1, 3);
         timer += Time.deltaTime;
-        Debug.Log(rInt);
         if (timer > 2f)
         {
             timer = 0f;
@@ -51,9 +50,12 @@ public class Boss : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "bullets")
+        Debug.Log("ALLO");
+
+        if (collision.gameObject.CompareTag("bullets"))
         {
             takeDamage(5);
+            Destroy(collision.gameObject);
         }
     }
 

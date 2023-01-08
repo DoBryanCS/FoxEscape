@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 6815600066425863010}
   - component: {fileID: 6815600066425863011}
   - component: {fileID: 2261634852237068599}
+  - component: {fileID: -4217672965835422246}
   - component: {fileID: 4024905149554608392}
   - component: {fileID: 1589689530263469755}
   - component: {fileID: 7024560763341725459}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Bullet
   m_TagString: bullets
   m_Icon: {fileID: 0}
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6815600066425863008}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.15950778, y: -1.0099807, z: 0.012955952}
-  m_LocalScale: {x: 0.1, y: 0.3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,6 +102,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 50
+--- !u!114 &-4217672965835422246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6815600066425863008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6f9f1a12bad4a93974ec0ac3de4b4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object1: {fileID: 6815600066425863008}
+  object2: {fileID: 1185661638846708143, guid: b49ac60d1e3ac4c62a0d3ec923a88779, type: 3}
 --- !u!50 &4024905149554608392
 Rigidbody2D:
   serializedVersion: 4
@@ -144,7 +159,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

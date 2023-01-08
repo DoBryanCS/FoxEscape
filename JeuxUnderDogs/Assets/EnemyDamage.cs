@@ -3,12 +3,13 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     //Linking PlayerHealth script
-    public PlayerHealth playerHealth;
+    [SerializeField]
+    private PlayerHealth playerHealth;
     public int damage = 1;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
