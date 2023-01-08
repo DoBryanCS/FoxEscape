@@ -15,6 +15,13 @@ public class following_Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.position = player.transform.position + new Vector3(0, 3f, -5f);
+        if (player)
+        {
+            this.gameObject.transform.position = player.transform.position + new Vector3(0, 3f, -5f);
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 }

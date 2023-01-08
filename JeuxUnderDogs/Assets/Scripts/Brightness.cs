@@ -21,16 +21,21 @@ public class Brightness : MonoBehaviour
         AdjustBrightness(brightnessSlider.value);
     }
 
-    public void AdjustBrightness(float value) 
+    public void AdjustBrightness(float value)
     {
-        if(value != 0)
+        if (exposure != null)
         {
-            exposure.keyValue.value = value;
-            PlayerPrefs.SetFloat("brightness", value);
-        }
-        else
-        {
-            exposure.keyValue.value = 1.0f;
+
+            if (value != 0)
+            {
+                print(value);
+                exposure.keyValue.value = value;
+                PlayerPrefs.SetFloat("brightness", value);
+            }
+            else
+            {
+                exposure.keyValue.value = 1.0f;
+            }
         }
     }
 

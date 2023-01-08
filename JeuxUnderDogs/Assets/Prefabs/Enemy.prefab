@@ -124,7 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67022b888b030d408f2be2603d01160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   movementSpeed: 2
   maxDistance: 5
   anim: {fileID: 5004124586272129568}
@@ -143,7 +142,7 @@ MonoBehaviour:
   player: {fileID: 0}
   firePoint: {fileID: 5004124586607301543}
   bulletPrefab: {fileID: 6368958338079134722, guid: 3f6febbfc304503499c04abe5c36e5eb, type: 3}
-  bulletForce: 20
+  bulletForce: 14
   timeBetweenShots: 1
   fireDistance: 8
 --- !u!95 &5004124586272129568

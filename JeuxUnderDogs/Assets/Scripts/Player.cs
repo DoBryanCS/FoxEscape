@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {   
@@ -27,5 +28,6 @@ public class Player : MonoBehaviour
         HealthDisplay healthDisplay = GetComponent<HealthDisplay>();
         healthDisplay.setEmpty();
         Destroy(gameObject);
+        SceneManager.LoadScene("Defeat");
     }
 }
