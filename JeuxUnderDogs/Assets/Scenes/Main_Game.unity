@@ -1414,10 +1414,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e14adc2aa20fae4a9bb0128a45d627e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minBuildingWidth: 15
-  minBuildingHeight: 15
-  cityWidth: 16
-  cityHeight: 16
+  minBuildingWidth: 12
+  minBuildingHeight: 12
+  cityWidth: 100
+  cityHeight: 100
   spacing: 4
   startPosition: {x: 0, y: 0}
   tileMapVisualizer: {fileID: 1160180530}

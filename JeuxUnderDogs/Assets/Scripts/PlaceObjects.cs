@@ -11,7 +11,7 @@ public class PlaceObjects:MonoBehaviour
     {
        
         
-        int numberOfObject = 5*buildingCase.Count/100;
+        int numberOfObject = 4*buildingCase.Count/100;
         for (int i = 0; i < numberOfObject; i++)
         {
             Vector2Int caseChoisi = new Vector2Int();
