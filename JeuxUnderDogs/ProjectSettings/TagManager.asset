@@ -3,26 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - walls
-  - bullets
-  - player
-  - ammoBox
-  - specialBox
-  - exitPoint
-  - arrow
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Postprocessing
   - Water
   - UI
   - 
   - 
   - 
   - 
-  - minimap
+  - 
   - 
   - 
   - 
@@ -45,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: BG
-    uniqueID: 2389055573
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
