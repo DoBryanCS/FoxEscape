@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
-{   
+{
+    public int damage = 50;
+
     void Update()
     {
         if (!GetComponent<Renderer>().isVisible)
