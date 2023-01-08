@@ -16,6 +16,13 @@ public class EnemyBullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        Player player = collision.gameObject.GetComponent<Player>();
+        if (player != null)
+        {
+            Debug.Log("Player hit");
+            player.TakeDamage(damage);
+        }
+
         Destroy(gameObject);
     }
 }
