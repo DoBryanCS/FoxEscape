@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
-    public Transform player;
+    public GameObject player;
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
@@ -12,6 +12,10 @@ public class EnemyShooting : MonoBehaviour
     public float timeBetweenShots = 2f;
     public float fireDistance = 8f;
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("player");
+    }
     // Update is called once per frame
     void Update()
     {
@@ -21,7 +25,7 @@ public class EnemyShooting : MonoBehaviour
 
             if (timer >= timeBetweenShots)
             {
-                float distance = Vector3.Distance(player.position, transform.position);
+                float distance = Vector3.Distance(player.transform.position, transform.position);
 
 
                 if (distance <= fireDistance)

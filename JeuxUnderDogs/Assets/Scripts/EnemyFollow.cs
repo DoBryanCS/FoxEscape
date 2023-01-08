@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public Transform player;
+    private GameObject player;
     public float movementSpeed = 5f;
     public float maxDistance = 5f;
     public Animator anim;
@@ -17,7 +17,8 @@ public class EnemyFollow : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   
+    {
+        player = GameObject.FindGameObjectWithTag("player");
         rb = this.GetComponent<Rigidbody2D>();
         wantedPosition = chooseRandomPoint();
     }
@@ -30,14 +31,14 @@ public class EnemyFollow : MonoBehaviour
         if (playerIsInRange)
         {
             // Rotation de l'ennemi
-            Vector3 direction = player.position - transform.position;
+            Vector3 direction = player.transform.position - transform.position;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             rb.rotation = angle - 90;
             direction.Normalize();
             movement = direction;
 
             // Movement de l'ennemi 
-            if (Vector3.Distance(player.position, transform.position) > 5)
+            if (Vector3.Distance(player.transform.position, transform.position) > 5)
             {
                 anim.SetBool("isWalking", false);
                 moveCharacter(movement);
@@ -78,7 +79,7 @@ public class EnemyFollow : MonoBehaviour
     {
         if (!player) return false;
 
-        float distance = Vector3.Distance(player.position, transform.position);
+        float distance = Vector3.Distance(player.transform.position, transform.position);
 
         if (distance < 10)
         {
@@ -86,5 +87,9 @@ public class EnemyFollow : MonoBehaviour
         }
 
         return false;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        chooseRandomPoint();
     }
 }

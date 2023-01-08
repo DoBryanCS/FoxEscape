@@ -5,10 +5,11 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     public bool isInteractable = true;
-    public float interactionRange = 2.0f; // The maximum distance at which the player can interact with the object
+    public float interactionRange = 0.3f; // The maximum distance at which the player can interact with the object
     public KeyCode interactionKey = KeyCode.E; // The key that the player can press to interact with the object
     private AudioSource audio = null;
     private bool destroyable = false;
+    [SerializeField]
     private GameObject player; // The player game object
 
    // public GameObject mesh; // The meshtextField;
@@ -22,11 +23,10 @@ public class Interactable : MonoBehaviour
     }
     private void Update()
     {
-        if (!player)
+        if (player)
         {
-            Debug.Log("In range");
         //    mesh.SetActive(true);
-            if(Input.GetKeyDown(interactionKey)) {
+            if(Input.GetKeyDown(interactionKey) && Vector3.Distance(player.transform.position,this.transform.position)<=interactionRange) {
                 Interact();
             }
         } else {

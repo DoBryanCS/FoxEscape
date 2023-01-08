@@ -1430,6 +1430,7 @@ MonoBehaviour:
   - {fileID: 3356627063324340345, guid: f850df41e0b29d7448916f226b579fb5, type: 3}
   door: {fileID: 867178119756989976, guid: 5d7cdd5d3981c4d46afb6d591d6750fb, type: 3}
   Box_Key: {fileID: 6776857991784910407, guid: 87e12d38e8444d74992a57b514723cff, type: 3}
+  enemy: {fileID: 5004124586272129562, guid: 85747d86d29af9f46bf8128539427b48, type: 3}
 --- !u!4 &1041599164
 Transform:
   m_ObjectHideFlags: 0

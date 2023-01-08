@@ -27,6 +27,8 @@ public class BinarySpacePartitionning : MonoBehaviour
     private GameObject door;
     [SerializeField]
     private GameObject Box_Key;
+    [SerializeField]
+    private GameObject enemy;
     
 
     public void Awake()
@@ -50,11 +52,16 @@ public class BinarySpacePartitionning : MonoBehaviour
         {
             if (compteur == buildingWithKey)
             {
-                Instantiate(Box_Key,building.center,Quaternion.identity);
+                Instantiate(Box_Key, building.center, Quaternion.identity);
             }
             BuildingCase = CreateSimpleBuilding(building);
             tileMapVisualizer.paintBuildingCase(BuildingCase);
-            WallGenerator.CreateWalls(BuildingCase, tileMapVisualizer,door);
+            WallGenerator.CreateWalls(BuildingCase, tileMapVisualizer, door);
+            if (BuildingCase.Count > 40)
+            {
+                int nombreEnemy = BuildingCase.Count % 30;
+                SpawnEnemy.spawn(building,enemy);
+            }
             PlaceObjects.place(building,BuildingCase,possiblesObjects,Grid);
             RoofGenerator.CreateRoofs(building,roofPrefabs,spacing);
             compteur++;
