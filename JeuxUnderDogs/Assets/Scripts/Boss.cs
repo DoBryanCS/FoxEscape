@@ -47,11 +47,6 @@ public class Boss : MonoBehaviour
                 AK();
         }
 
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            takeDamage(20);
-        }
-
     }
 
     void OnCollisionEnter2D(Collision2D collision)
