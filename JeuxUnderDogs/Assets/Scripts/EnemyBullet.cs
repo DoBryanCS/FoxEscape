@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
-    public int damage = 50;
+    public float damage = 0.5f;
 
     void Update()
     {
@@ -19,7 +19,6 @@ public class EnemyBullet : MonoBehaviour
         Player player = collision.gameObject.GetComponent<Player>();
         if (player != null)
         {
-            Debug.Log("Player hit");
             player.TakeDamage(damage);
         }
 

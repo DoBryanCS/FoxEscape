@@ -14,17 +14,24 @@ public class Interactable : MonoBehaviour
 
     private void Update()
     {
-        // Check if the player is close enough to the object and if they are pressing the interaction key
-        if (isInteractable && Vector3.Distance(transform.position, player.transform.position) <= interactionRange)
+        if (!player)
         {
-            Debug.Log("In range");
-            mesh.SetActive(true);
-            if(Input.GetKeyDown(interactionKey)) {
-                Interact();
+            Destroy(this);
+        } else
+        {
+            // Check if the player is close enough to the object and if they are pressing the interaction key
+            if (isInteractable && Vector3.Distance(transform.position, player.transform.position) <= interactionRange)
+            {
+                Debug.Log("In range");
+                mesh.SetActive(true);
+                if(Input.GetKeyDown(interactionKey)) {
+                    Interact();
+                }
+            } else {
+                mesh.SetActive(false);
             }
-        } else {
-            mesh.SetActive(false);
         }
+
     }
 
     public virtual void Interact()

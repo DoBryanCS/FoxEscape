@@ -76,6 +76,8 @@ public class EnemyFollow : MonoBehaviour
 
     bool playerInRange()
     {
+        if (!player) return false;
+
         float distance = Vector3.Distance(player.position, transform.position);
 
         if (distance < 10)

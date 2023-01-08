@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
-{
-    public int health = 100;
+{   
+    public float maxHealth = 5f;
+    public float health;
 
-    public void TakeDamage(int damage)
+    void Start()
+    {
+        health = maxHealth;
+    }
+
+    public void TakeDamage(float damage)
     {
         health -= damage;
 
@@ -18,8 +24,8 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        // Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Debug.Log("Joueur Mort");
+        HealthDisplay healthDisplay = GetComponent<HealthDisplay>();
+        healthDisplay.setEmpty();
         Destroy(gameObject);
     }
 }
