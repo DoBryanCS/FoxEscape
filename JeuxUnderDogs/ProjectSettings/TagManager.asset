@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Life
+  - Enemy
+  - bullets
+  - borders
+  - Boss
+  - Undefined
+  - bullets_boss
   layers:
   - Default
   - TransparentFX
@@ -11,8 +18,8 @@ TagManager:
   - Postprocessing
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - bullet
   - 
   - 
   - 
@@ -38,6 +45,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1405481855
+    locked: 0
+  - name: Platform
+    uniqueID: 154111307
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
