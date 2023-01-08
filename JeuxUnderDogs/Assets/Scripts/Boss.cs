@@ -18,7 +18,7 @@ public class Boss : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     private float timer = 0;
-    public HealthBar healthBar;
+    public HealthBarMomo healthBar;
     Animation anim;
 
     public GameObject bulletPreFab;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class ShootingMomo : MonoBehaviour
 {
     private Camera mainCam;
     private Vector3 mousePos;

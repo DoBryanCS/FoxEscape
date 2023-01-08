@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementMomo : MonoBehaviour
 {
     public CharacterController2D controller;
     public Animator animator;
