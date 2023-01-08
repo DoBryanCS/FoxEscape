@@ -22,6 +22,8 @@ public class BinarySpacePartitionning : MonoBehaviour
     private Grid Grid;
     [SerializeField]
     private GameObject[] roofPrefabs;
+    [SerializeField]
+    private GameObject door;
     
 
     public void Awake()
@@ -38,11 +40,12 @@ public class BinarySpacePartitionning : MonoBehaviour
     {
         var BuildingsList = ProceduralGeneration.BinarySpacePartitioning(new BoundsInt((Vector3Int)startPosition, new Vector3Int(cityWidth, cityHeight, 0)), minBuildingWidth, minBuildingHeight);
         HashSet<Vector2Int> BuildingCase = new HashSet<Vector2Int>();
+        Generate_Object.createsObject(tileMapVisualizer);
         foreach (var building in BuildingsList)
         {
             BuildingCase = CreateSimpleBuilding(building);
             tileMapVisualizer.paintBuildingCase(BuildingCase);
-            WallGenerator.CreateWalls(BuildingCase, tileMapVisualizer);
+            WallGenerator.CreateWalls(BuildingCase, tileMapVisualizer,door);
             PlaceObjects.place(building,BuildingCase,possiblesObjects,Grid);
             RoofGenerator.CreateRoofs(building,roofPrefabs,spacing);
         }

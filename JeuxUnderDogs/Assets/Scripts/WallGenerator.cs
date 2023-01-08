@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class WallGenerator
 {
-    public static void CreateWalls(HashSet<Vector2Int> floorPositions,TileMapVisualizer tileMapVisualizer)
+    public static void CreateWalls(HashSet<Vector2Int> floorPositions,TileMapVisualizer tileMapVisualizer, GameObject door)
     {
         int counter = 0;
          
@@ -15,6 +15,10 @@ public static class WallGenerator
             if (counter != porte)
             {
                 tileMapVisualizer.PaintSingleWall(position);
+            }
+            else
+            {
+                AddDoors.createDoor(position,Direction2D.cardinalDirectionList,floorPositions,door);
             }
             counter++;
         }

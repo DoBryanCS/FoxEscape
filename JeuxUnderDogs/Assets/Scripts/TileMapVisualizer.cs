@@ -15,10 +15,18 @@ public class TileMapVisualizer : MonoBehaviour
     private Tilemap Wallmap;
     [SerializeField]
     private TileBase[] wallTile;
+    [SerializeField]
+    private Tilemap ObstacleMap;
+    [SerializeField]
+    private TileBase[] objectTiles;
 
     public void paintBuildingCase(IEnumerable<Vector2Int> buildingPositions)
     {
         paintTiles(buildingPositions, BuildingTileMap, BuildingTile);
+    }
+    public void paintObjectCase(Vector2Int position)
+    {
+        PaintSingleTile(ObstacleMap, objectTiles[Random.Range(0,objectTiles.Length)], position);
     }
 
     internal void PaintSingleWall(Vector2Int position)

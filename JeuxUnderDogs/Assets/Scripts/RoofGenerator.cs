@@ -12,7 +12,7 @@ public class RoofGenerator : MonoBehaviour
         Vector3 position = new Vector3Int();
         position.x = building.center.x;
         position.y = building.center.y;
-        position.z = 0;
+        position.z = -5f;
         GameObject myRoof = roofPrefabs[Random.Range(0, roofPrefabs.Length)];
         myRoof.transform.localScale = new Vector3(building.size.x - 2*spacing ,building.size.y - 2*spacing,0);
         Instantiate(myRoof,position,Quaternion.identity);
