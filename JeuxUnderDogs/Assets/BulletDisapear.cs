@@ -3,8 +3,21 @@ using UnityEngine;
 public class BulletDisapear : MonoBehaviour
 {
 
-    void onCollisionEnter2D(Collision2D collision)
+    void Update()
     {
-        Destroy(gameObject);
+        if (!GetComponent<Renderer>().isVisible)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "borders")
+        {
+            Destroy(gameObject);
+        }
+
+
     }
 }
