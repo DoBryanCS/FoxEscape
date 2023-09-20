@@ -1,92 +1,89 @@
-# Game Jam 2023
+<a name="readme-top"></a>
+<div align="center">
+    <img src="https://github.com/DoBryanCS/FoxEscape/assets/111463691/b9e50fcd-7dfa-4198-8fcd-30d491c1033c" alt="Logo" width="80" height="80">
+    <h3 align="center">Fox Escape</h3>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table des matières</summary>
+  <ol>
+    <li>
+      <a href="#À-propos-du-projet">À propos du projet</a>
+    </li>
+    <li>
+      <a href="#Développé-avec">Développé avec</a>
+    </li>
+    <li>
+      <a href="#Photos-du-jeu">Photos du jeu</a>
+    </li>
+    <li>
+      <a href="#Lien-et-demo-du-jeu">Lien et demo du jeu</a>
+    </li>
+    <li>
+      <a href="#Contributeurs">Contributeurs</a>
+    </li>
+  </ol>
+</details>
+
+## À propos du projet
+
+Création d'un jeu Unity. Le personnage principale est un renard. L'objectif est de trouver la clé cachée dans la ville déserte tout en se méfiant des ennemis qui se cachent et qui attendent dans les bâtiments. Une fois que la clé est trouvé, il faut affronter l'ennemi final dans une bataille à mort.
+
+Voici l'histoire:
+
+Alors que le soleil tape sur l’infinie étendue de sable, un renard avance péniblement dans le désert. La sueur perle sur son front et ses vêtements sont déchirés et sales. Des flashbacks de l'embuscade qui l'a laissé bloqué ici lui traversent l'esprit.
+
+Il se souvient du chaos, des cris, des coups de feu. Il voit les visages de sa famille, de ses camarades, tels qu'ils lui ont été enlevés lors de l'attaque. La douleur de la perte menace de le consumer, mais il la repousse. Il ne peut pas se permettre de s'attarder sur le passé. Il doit se concentrer sur le présent, sur la survie.
+
+Il scrute l'horizon, à la recherche de tout signe du point d'extraction. Il sait que c'est quelque part là-bas, sa seule chance de sortir vivant de cet enfer. Il serre son fusil plus fort et accélère le pas. Il sait qu'il n'est pas seul ici. L'ennemi est toujours là, à sa poursuite.
+
+Le renard prend une profonde inspiration et se prépare au long voyage à venir. Il ne laissera pas l'ennemi gagner. Il ne tombera pas sans se battre. Il avance, déterminé à atteindre le point d'extraction et à découvrir la vérité derrière l'embuscade qui lui a tout pris. Il ne se reposera pas tant que justice ne sera pas rendue.
+
+<p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
+
+## Développé avec
+
+Voici les technologies et les outils utilisés pour le développement de ce projet
+
+* [![Unity][Unity]][Unity-url]
+* [![C#][C#]][C#-url]
+
+<p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
+
+## Photos du jeu
+  
+  ![image](https://github.com/DoBryanCS/FoxEscape/assets/111463691/ba8ef745-0908-4ecf-82ff-24f90ef44b1e)
+  ![image](https://github.com/DoBryanCS/FoxEscape/assets/111463691/7552fb04-11ea-4de6-aab0-ab3d9026715d)
+  ![image](https://github.com/DoBryanCS/FoxEscape/assets/111463691/8382ee5a-638d-438f-8d2d-6f60b1f60499)
+  ![image](https://github.com/DoBryanCS/FoxEscape/assets/111463691/2a9aaf32-1ff6-48e2-8d0f-8c8dbd2b4a9b)
+  ![image](https://github.com/DoBryanCS/FoxEscape/assets/111463691/960353f4-92a4-41c7-ae52-a4d8e5cb3124)
+
+  <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
+
+  ## Lien et demo du jeu
+
+  https://marc1232.itch.io/fox-escape-the-deserted-town 
+
+  <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
+
+  ## Contributeurs
+
+  * Nathan Lamy
+  * Mohammed Khedim
+  * Yao Kounakou
+  * Xavier Béland
+  * Marc Charlebois
+  * Thomas Huy Nguyen
+  * Do Khoa Bryan
+  * Makhlouf Hennine
 
 
+  <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/underdogs-unity/game-jam-2023.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/underdogs-unity/game-jam-2023/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Unity]: https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white
+[Unity-url]: https://unity.com/
+[C#]: https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white
+[C#-url]: https://www.w3schools.com/cs/index.php
